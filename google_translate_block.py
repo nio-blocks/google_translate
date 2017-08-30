@@ -12,18 +12,19 @@ class GoogleTranslate(Block):
   
     def __init__(self):
         super().__init__()
-        self.translator = None
-
-    def start(self):
         self.translator = Translator()
+#
+#    def start(self):
+#        self.translator = Translator()
 
     def process_signals(self, signals):
         fresh_signals = []
 
         for signal in signals:
             tmp = Signal()
-            translated_text = translator.translate(signal.text, src=src, dest=dest).text.encode('utf-8')
-            fresh_signals.append(setattr(tmp, 'text', translated_text))
+            translated_text = self.translator.translate(signal.text, src=self.src(), dest=self.dest()).text
+            signal.text = translated_text
+            fresh_signals.append(signal)
 
         signals = fresh_signals
             

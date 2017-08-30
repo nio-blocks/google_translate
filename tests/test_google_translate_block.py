@@ -4,7 +4,7 @@ from nio.testing.block_test_case import NIOBlockTestCase
 from ..example_block import Example
 
 
-class TestExample(NIOBlockTestCase):
+class TestGoogleTranslate(NIOBlockTestCase):
 
     def test_process_signals(self):
         """Signals pass through block unmodified."""
