@@ -13,9 +13,6 @@ class GoogleTranslate(Block):
     def __init__(self):
         super().__init__()
         self.translator = Translator()
-#
-#    def start(self):
-#        self.translator = Translator()
 
     def process_signals(self, signals):
         fresh_signals = []
