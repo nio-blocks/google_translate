@@ -1,40 +1,29 @@
 {
-  "namespace/BlockName": {
-    "version": "1.0.0",
-    "description": "Description of the block.",
+  "nio/GoogleTranslate": {
+    "version": "2.0.0",
+    "description": "Translate text to any language with Google Translate",
     "properties": {
-      "<property1>": {
-        "description": "Required description of the property"
+      "src": {
+        "title": "Source Language",
+        "type": "StringType",
+        "description": "Language code of source language"
       },
-      "<property2>": {
-        "default": "Optional metadata with any key.",
-        "description": "Required description of the property"
+      "dest": {
+        "title": "Destination Language",
+        "type": "StringType",
+        "description": "Language code of destination language"
       }
     },
     "inputs": {
-      "<input1 | default>": {
-        "description": "Required description of the input",
-      },
-      "<input2>": {
-        "description": "Required description of the input"
+      "default": {
+        "description": "A signal containing a 'text' attribute to be translated"
       }
     },
     "outputs": {
-      "<output1 | default>": {
-        "description": "Required description of the output",
-      },
-      "<output2>": {
-        "description": "Required description of the output"
+      "default": {
+        "description": "A signal with the text value translated to the destination language"
       }
     },
-    "commands": {
-      "<command1>": {
-        "description": "Required description of the command",
-        "type": "Optional type and other metadata with any key."
-      },
-      "<command2>": {
-        "description": "Required description of the command"
-      }
-    }
+    "commands": {}
   }
 }
