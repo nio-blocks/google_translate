@@ -1,17 +1,19 @@
 {
   "nio/GoogleTranslate": {
-    "version": "2.0.0",
+    "version": "0.1.0",
     "description": "Translate text to any language with Google Translate",
     "properties": {
-      "src": {
-        "title": "Source Language",
-        "type": "StringType",
-        "description": "Language code of source language"
-      },
       "dest": {
         "title": "Destination Language",
         "type": "StringType",
-        "description": "Language code of destination language"
+        "description": "Language code of destination language",
+        "default": null
+      },
+      "src": {
+        "title": "Source Language",
+        "type": "StringType",
+        "description": "Language code of source language",
+        "default": null
       }
     },
     "inputs": {
