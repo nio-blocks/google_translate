@@ -15,7 +15,10 @@ Outputs
 -------
 - **default**: A signal with the text value translated to the destination language
 
+Dependencies
+------------
+googletrans
+
 Commands
 --------
 None
-
