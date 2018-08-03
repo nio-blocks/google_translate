@@ -2,6 +2,9 @@
   "nio/GoogleTranslate": {
     "version": "0.1.0",
     "description": "Translate text to any language with Google Translate",
+    "categories": [
+      "Web Data"
+    ],
     "properties": {
       "dest": {
         "title": "Destination Language",
