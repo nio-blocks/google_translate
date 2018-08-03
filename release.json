@@ -1,7 +1,7 @@
 {
   "nio/GoogleTranslate": {
     "language": "Python",
-    "url": "git://github.com/tlugger/google_translate.git",
+    "url": "git://github.com/nio-blocks/google_translate.git",
     "version": "0.1.0"
   }
 }
