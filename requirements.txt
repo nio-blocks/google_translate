@@ -1,1 +1,1 @@
-googletrans
+googletrans~=2.3
