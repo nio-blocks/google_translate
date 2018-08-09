@@ -3,7 +3,8 @@
     "version": "0.1.0",
     "description": "Translate text to any language with Google Translate",
     "categories": [
-      "Machine Learning"
+      "Machine Learning",
+      "Web Data"
     ],
     "properties": {
       "dest": {
